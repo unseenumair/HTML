@@ -35,4 +35,4 @@ To get started with HTML, all you need is a **text editor** (like VS Code) and a
 
 1. Clone this repository:  
    ```bash
-   git clone https://github.com/your-username/html-code-learnings.git
+   git clone https://github.com/UmairShakoor/HTML.git
