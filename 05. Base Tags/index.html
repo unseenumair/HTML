@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML - Base Tag</title>
+    <link rel="shortcut icon" href="/Assets/Icons/favicon.svg">
+</head>
+<body>
+    <!-- Base tag is used to reduce the repititive task of writing common content of href+src(Use href="" for both) & target(Use target="")  -->
+    <base href="/Assets/Img/" target="_blank">
+    <!-- We can also use choose base for only one attribute as bellow but at a time we must have to use only one base tag in whole html page -->
+    <!-- <base href="/Assets/Img/"> -->
+    <!-- <base target="_blank"> -->
+    
+    <!-- We can base href="" {called "href attribute"}to reduce the repititive task of href's common content . Remember it also directs src="" {called "src attribute"} -->
+    
+    <a href="/Assets/Icons/favicon.svg">HTML-5.0 Logo</a>
+    <img src="html.svg" alt="Error">
+    
+    <!-- We must have to add a slash "\" at the last of the base But if we add a slash at start of the href,src then the base we given globally will not work as -->
+    <a href="/Assets/Aud/Rain.mp3">Rain.mp3</a>
+    <audio src="/Assets/Aud/Rain.mp3" controls preload="auto"></audio>
+    <!-- Imp Note : We should use base tag in head tag because base tag should occur before the href,src & target attributes .
+    But I am using base tag in body tag just for better explanation for it .
+    Base tag should only be one in your page -->
+</body>
+</html>

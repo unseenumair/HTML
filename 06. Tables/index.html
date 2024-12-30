@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML - Tables</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <base href="/Assets/Icons/">
+  <link rel="shortcut icon" href="favicon.svg">
+</head>
+<body>
+  <h1>Tables</h1>
+  <table>
+    <caption>Data</caption>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>ID</th>
+        <th>Fav. lang.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Umair</td>
+        <td>001</td>
+        <td>Html</td>
+      </tr>
+      <tr>
+         <!--  colspan="1" or rowspan="1" is by default for every element.
+         Colspan is for extra sapce in next column.
+         Rowspan is for extra space in next row. -->
+        <td colspan="2">Adnan</td>
+        <td rowspan="2">002</td>
+      </tr>
+      <tr>
+        <td colspan="2">Furqan</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2">Sam</td>
+        <td rowspan="2">Java</td>
+      </tr>
+      </tfoot>
+  </table>
+  <br>
+  <table class="nested">
+    <caption>Nested Table</caption>
+    <tr>
+      <td>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Role</th>
+          </tr>
+          <tr>
+            <td>Umair</td>
+            <td>Coder</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <br>
+  </body>
+</html>

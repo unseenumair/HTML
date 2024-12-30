@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML - Forms</title>
+  <base href="/Assets/Icons/"> 
+  <link rel="shortcut icon" href="favicon.svg">
+</head>
+
+<body>
+  <h1>Form to apply for Co.</h1>
+  <form action="/submit.php" method="POST">
+    <div>
+      <label for="name">Name:</label>
+    <!--if you wanna autofocus(already focused when page loads) then wirte it as below-->
+    <!-- Placeholder is used to show some text in the input field before input of any data by the user --> 
+   <input type="text" name="my name" id="name" placeholder="Enter your name" autofocus>
+    </div>
+    <br>
+    <div>
+        <label for="email">Email:</label>
+       <!--  If some input is necessary we can add required attribute so, the user can't be able to submit the form if he don't enter data in it -->
+        <input type="text" name="myEmail" id="email" required>
+    </div>
+    <br>
+    <div>
+        <label for="pass">Password:</label>
+        <input type="password" name="myPassword" id="pass">
+    </div>
+    <br>
+<div>
+    <label for="date"> Date: </label>
+    <input type="date" name="myDate" id="date">
+    <!-- Validation for date -->
+    <!-- <input type="date" name="myDate" id="date" min="2018-03-01" max="2024-12-30">  -->
+</div>
+<br>
+<div>
+    <!-- if a small difference in label and id occurs then it will not work (as bellow) -->
+    <label for="Bonus"> Bonus: </label>
+    <!-- "e" is accepted in numbers because we can use it to write large amount in numbers as the power of 10  -->
+    <input type="number" name="myBonus" id="bonus">
+</div>
+    <br>
+    <!-- When we use type of input as radio so we have to give the same name to all common radio inputs as -->
+    <div>
+      Gender; 
+      <label for="male">Male</label>
+      <input type="radio" name="my gender" id="male">
+      <label for="female">Female</label>
+      <input type="radio" name="my gender" id="female">
+      <!--Even a small difference between label for="" and id="" occurs like the below the label tag will not able to function-->
+      <label for="other">Other</label>
+      <input type="radio" name="my gender" id="Other">
+    </div>
+    <br>
+    <div>
+      <label for="eligibility">Are you eligible?</label>
+
+      <!-- To check the checkbox by default we use "checked" as bellow -->
+
+      <input type="checkbox" name="my eligibility" id="eligibility" checked>
+    </div>
+    <br>
+    <div>
+      <label for="text">Write about yourself;</label>
+      <br>
+      <textarea name="my text" id="text" cols="30" rows="10"></textarea>
+    </div>
+    <br>
+    <div>
+      <label for="car">Car</label>
+      <select name="my car" id="car">
+        <option value="no">None</option>
+        <!--if you wanna select a car(value) by default then write "selected" in which value you want-->
+        <option value="swf" selected>Swift</option>
+        <!-- If we add disabled attribute in an input OR button the user can't be able to click it -->
+        <option value="alto" disabled>Alto</option>
+        <option value="cultus">Cultus</option>
+      </select>
+    </div>
+    <br>
+    <div>
+        
+    <input type="submit" value="Submit Now">
+    <input type="reset" value="Reset Now">
+    </div>
+  </form>
+  <br>
+  <!-- Fieldset -->
+<!-- Use to describe a collection of inputs on particular topic -->
+<form action="submit.php" method="POST">
+    <fieldset>
+        <legend>Personalia:</legend><!-- Used as a caption for fieldset -->
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Choose your favorite monster</legend>
+
+        <input type="radio" id="kraken" name="monster" value="K">
+        <label for="kraken">Kraken</label><br>
+
+        <input type="radio" id="sasquatch" name="monster" value="S">
+        <label for="sasquatch">Sasquatch</label><br>
+
+        <input type="radio" id="mothman" name="monster" value="M">
+        <label for="mothman">Mothman</label>
+    </fieldset>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+<br>
+<!-- SOme other Input types -->
+<form action="/submit.php" method="POST">
+    <!-- Time -->
+    <div>
+        <label for="time">Time:</label>
+        <!-- <input type="time" id="time" name="time"> -->
+        <!-- Using default input -->
+        <!-- <input type="time" id="time" name="time" value="13:30"> -->
+        For taking seconds in time
+        <input type="time" id="time" name="time" step="2">
+    </div>
+    <br>
+    <!-- File -->
+     <div>
+        <label for="file">File</label>
+        <!-- <input type="file" id="file" name="myFile"> -->
+        <!-- Validation for choosing file -->
+        <!-- For jpg,png,svg image selection But
+        If we have to choose all types of image So, we can use image/* .
+        It is same for choosing files of pdf,txt etc format -->
+        <input type="file" id="file" name="myFile" accept="image/png,image/jpg,image/svg">
+    </div>
+    <br>
+    <div>
+        <label for="datetime">Enter DateTime:</label>
+        <input type="datetime-local">
+    </div>
+    <br>
+    <div>
+        <label for="color">Enter a Color</label>
+        <input type="color" id="color">
+    </div>
+    <br>
+    <!-- URL -->
+    <div>
+        <label for="myURL">Enter URL:</label>
+        <input id="myURL" name="myURL" type="url" list="defaultUrls">
+      <datalist id="defaultUrls">
+    <option value="https://developer.mozilla.org"></option>
+    <option value="http://www.google.com"></option>
+    <option value="http://www.microsoft.com"></option>
+    <option value="https://www.mozilla.org"></option>
+    <option value="http://w3.org"></option>
+       </datalist>
+    </div>
+</form>
+</body>
+
+</html>

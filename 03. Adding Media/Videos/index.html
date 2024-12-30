@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>HTML - Adding Videos</title>
+    <link rel="shortcut icon" href="/Assets/Icons/favicon.svg">
+
+</head>
+
+<body>
+    <h1>Videos</h1>
+    <h3>video without using width and height attributes:-</h3>
+    <video src="/Assets/Vid/Water flow.mp4"></video>
+
+    <h3>video without controls(playing or stop);</h3>
+    <video src="/Assets/Vid/Water flow.mp4" width="300" height="200"></video>
+    <h3>video with controls;</h3>
+    <video src="/Assets/Vid/Water flow.mp4" controls height="200" width="300"></video>
+    <h3>if we use muted attribute in code;</h3>
+<video src="/Assets/Vid/Water flow.mp4" height="200" width="300" controls muted></video>
+    <h3>if we autoplay video then:-
+        Muted with Autoplay is necessary</h3>
+    <video src="/Assets/Vid/Water flow.mp4" height="200" width="300" controls autoplay muted></video>
+    <h3>if we add loop in code then;(the video will continously playing after one play till we stop it)</h3>
+    <video src="/Assets/Vid/Water flow.mp4" height="200" width="300" controls loop></video>
+    <h3>if we add poster="path of jpg" then the first looking screen will show the jpg as </h3>
+    <video src="/Assets/Vid/Water flow.mp4" height="200" width="300" controls poster="/Assets/Img/lotus flower.jpg"></video>
+    <h3>We can also link video that is avail on the internet</h3>
+    <!-- We can also use preload in video as in audio -->
+<video src="https://videos.pexels.com/video-files/3173312/3173312-uhd_2560_1440_30fps.mp4" controls width="300" height="200"  preload="auto"></video>
+    <h3>Alternative Method to add video</h3>
+    <video height="200" width="300" controls><source src="/Assets/Vid/Water flow.mp4" type="video/mp4"></video>
+</body>
+</html>

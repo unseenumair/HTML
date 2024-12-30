@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>HTML - Adding Audios</title>
+    <link rel="shortcut icon" href="/Assets/Icons/favicon.svg">
+</head>
+<body>
+    <h1>Audios</h1>
+    <h3>Adding controls attribute in audio is necessary because without controls attribute audio will disappeared in web as;</h3>
+    <audio src="/Assets/Aud/Rain.mp3"></audio>
+    <hr>
+    <h3>Audio with controls</h3>
+    <audio src="/Assets/Aud/Rain.mp3" controls></audio>
+    <h4> Three attributes are same in audio as in video (muted,loop and autoplay) </h4>
+    <h3>Adding preload in audio</h3>
+
+    <!--Preload tag means that the browser will fetch the audio before loading of web,preload is of three types 
+      1.None (defualted);-->
+    <audio src="/Assets/Aud/Rain.mp3" controls preload="none"></audio>
+
+    <!--2. meta data 
+      this type ables the broswer to fetch only information about audio before loading of web-->
+   <audio src="/Assets/Aud/Rain.mp3" controls preload="metadata"></audio>
+   
+    <!--3.Auto
+          this type ables browser to fully hand access to audio before loading of web-->
+    <audio src="/Assets/Aud/Rain.mp3" controls preload="auto"></audio>
+    
+    <h3>Alternative Method to add audio</h3>
+    <audio controls>
+        <source src="/Assets/Aud/Rain.mp3" type="audio/mp3"></audio>
+</body>
+</html>
