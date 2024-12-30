@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HTML - Semantics</title>
+  <base href="/Assets/">
+  <link rel="icon" href="Icons/favicon.svg">
+</head>
+<body>
+   <!-- Before Html - 5.0 , Semantics are not introduced by W3C (World Wide Web Con..) so, developers build website according to their ease but not following a specific method of arrangements as Semantics -->
+  <!-- You can say semantic tags as an arranger of web these tags help us to build a better SEO(Search Engine Optimization)  to rank our website through different browsers -->
+  <!-- Header -->
+  <header>
+    <!-- The header contains introductory content or navigational links -->
+    <nav>
+        <!-- Navigation bar for site links -->
+        <ul>
+            <li><a href="#home">Home</a></li> <!-- Link to Home section -->
+            <li><a href="#about">About</a></li> <!-- Link to About section -->
+            <li><a href="#contact">Contact</a></li> <!-- Link to Contact section -->
+        </ul>
+    </nav>
+  </header> 
+  <!-- Main -->
+  <main>
+    <!-- Main content area of the page -->
+    <h1>Main Title of the Page</h1> <!-- Main heading for the page -->
+    <section id="about">
+        <!-- One Section tag contain explanation on one topic and other section tag contains explanation on other topic i.e, it is just like a collection of paragraphs, headings etc about a particular topic--> 
+        <!-- Section for About Us content -->
+        <h2>About Us</h2> <!-- Subheading for this section -->
+        <p>Description about the topic.</p> <!-- Paragraph providing details -->
+    </section>
+
+    <section id="services">
+        <!-- Section for Services offered -->
+        <h2>Our Services</h2> <!-- Subheading for this section -->
+        <p>Description of services offered.</p> <!-- Paragraph providing details -->
+    </section>
+
+    <aside>
+        <!-- Aside element for related information that is not essential to the main content -->
+        <h2>Related Information</h2> <!-- Subheading for related info -->
+        <p>This is additional information that supports the main content.</p> <!-- Additional details -->
+    </aside>
+
+    <article id="article1">
+        <!-- Article element representing a self-contained piece of content -->
+        <h2>Article Title</h2> <!-- Title of the article -->
+        <p>This is a self-contained piece of content.</p> <!-- Main content of the article -->
+
+        <!-- Example sub-sections within an article -->
+        <section id="subtopic1">
+            <h3>Subtopic 1</h3> <!-- Subheading for subtopic 1 -->
+            <p>Description for subtopic 1.</p> <!-- Content related to subtopic 1 -->
+        </section>
+
+        <section id="subtopic2">
+            <h3>Subtopic 2</h3> <!-- Subheading for subtopic 2 -->
+            <p>Description for subtopic 2.</p> <!-- Content related to subtopic 2 -->
+        </section>
+    </article>
+    <!-- For adding  images, graphics, videos etc then we can use figure -->
+    <figure>
+        <!-- Figure element used to encapsulate media content with a caption -->
+        <figcaption>A beautiful lotus flower.</figcaption> <!-- Caption describing the figure i.e, Figure Heading -->
+        <img src="Img/lotus flower.jpg" alt="A beautiful lotus flower" width="250">
+    </figure> <!-- We can't use section tags inside a figure tag instead we can have multiple figure tags inside a section tag -->
+</main>
+  <!-- We can include important links etc in footer tag -->
+  <footer> <!-- Ending of the its nearest ancestor -->
+    Copyright &copy; 2024 Umair Shakoor | All rights reserved
+<!--We use time tag to add time,date related info. in it-->
+<time datetime="2024-12-15">December 15, 2024</time>  <!-- Time element(datetime attribute) providing machine-readable date info --> 
+  </footer>
+</body>
+</html>
