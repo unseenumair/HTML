@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML - Forms</title>
   <base href="/Assets/Icons/"> 
-  <link rel="shortcut icon" href="favicon.svg">
+  <link rel="icon" href="favicon.svg">
 </head>
 
 <body>
@@ -22,7 +22,7 @@
     <div>
         <label for="email">Email:</label>
        <!--  If some input is necessary we can add required attribute so, the user can't be able to submit the form if he don't enter data in it -->
-        <input type="text" name="myEmail" id="email" required>
+        <input type="email" name="myEmail" id="email" required>
     </div>
     <br>
     <div>
@@ -77,7 +77,7 @@
         <!--if you wanna select a car(value) by default then write "selected" in which value you want-->
         <option value="swf" selected>Swift</option>
         <!-- If we add disabled attribute in an input OR button the user can't be able to click it -->
-        <option value="alto" disabled>Alto</option>
+        <option value="Ye sirf Padhne ke lye hy" disabled>Alto</option> <!-- disabled and readonly attributes works the same  -->
         <option value="cultus">Cultus</option>
       </select>
     </div>
@@ -126,7 +126,7 @@
         <!-- <input type="time" id="time" name="time"> -->
         <!-- Using default input -->
         <!-- <input type="time" id="time" name="time" value="13:30"> -->
-        For taking seconds in time
+        <!-- For taking seconds in time -->
         <input type="time" id="time" name="time" step="2">
     </div>
     <br>
